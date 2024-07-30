@@ -30,6 +30,14 @@ class KeteranganPindahDomisiliController extends BaseController
     {
         $data = array();
 
+        $request->validate([
+            'foto_kk' => 'required|mimes:jpeg,png|max:2048', // Menentukan tipe file dan ukuran maksimum
+        ], [
+            'foto_kk.required' => 'Kolom foto KTP wajib diisi.',
+            'foto_kk.mimes' => 'Kolom foto KTP harus berupa file dengan tipe: jpeg, png.',
+            'foto_kk.max' => 'Kolom foto KTP tidak boleh lebih dari 2048 kilobyte.',
+        ]);
+
         $fotoKk = '';
         if ($request->file('foto_kk')) {
             $extension = $request->file('foto_kk')->extension();

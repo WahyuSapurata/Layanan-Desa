@@ -479,6 +479,32 @@
                     showConfirmButton: false,
                     timer: 3000
                 })
+            @elseif (Session::has('warning'))
+                Swal.fire({
+                    icon: @json(Session::get('status')),
+                    title: @json(Session::get('status')) == 'success' ? 'Berhasil' : 'Gagal',
+                    text: @json(Session::get('message')),
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+            @endif
+
+            @if ($errors->has('foto_ktp'))
+                Swal.fire({
+                    icon: 'warning',
+                    text: @json($errors->first('foto_ktp')),
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+            @endif
+
+            @if ($errors->has('foto_kk'))
+                Swal.fire({
+                    icon: 'warning',
+                    text: @json($errors->first('foto_kk')),
+                    showConfirmButton: false,
+                    timer: 3000
+                })
             @endif
         });
 

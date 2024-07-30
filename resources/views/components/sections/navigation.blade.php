@@ -28,7 +28,7 @@
 
                         <div class="mb-10">
                             <label for="nik" class="form-label">NIK</label>
-                            <input class="form-control" type="text" name="nik" id="nik">
+                            <input class="form-control" type="number" name="nik" id="nik">
                             <small class="text-danger nik_error"></small>
                         </div>
 
@@ -68,13 +68,24 @@
 
                         <div class="mb-10">
                             <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
-                            <input class="form-control" type="text" name="kewarganegaraan" id="kewarganegaraan">
+                            <select name="kewarganegaraan" class="form-select"
+                                data-placeholder="Pilih jenis kewarganegaraan">
+                                <option></option>
+                                <option value="indonesia">Indonesia</option>
+                                <option value="asin">Asing</option>
+                            </select>
                             <small class="text-danger kewarganegaraan_error"></small>
                         </div>
 
                         <div class="mb-10">
                             <label for="agama" class="form-label">Agama</label>
-                            <input class="form-control" type="text" name="agama" id="agama">
+                            <select name="agama" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                            </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 
@@ -92,7 +103,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -191,7 +202,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -276,7 +287,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon_penjual">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon_penjual">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -567,7 +578,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -709,7 +720,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -849,7 +860,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -989,7 +1000,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 
@@ -1116,7 +1127,7 @@
 
                         <div class="mb-10">
                             <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="text" name="no_telepon" id="no_telepon">
+                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
                             <small class="text-danger no_telepon_error"></small>
                         </div>
 

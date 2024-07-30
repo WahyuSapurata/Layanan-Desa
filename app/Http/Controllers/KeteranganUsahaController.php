@@ -29,8 +29,16 @@ class KeteranganUsahaController extends BaseController
 
     public function store(Request $request)
     {
-        $data = array();
+        // Validasi input dengan pesan kesalahan khusus
+        $request->validate([
+            'foto_ktp' => 'required|mimes:jpeg,png|max:2048', // Menentukan tipe file dan ukuran maksimum
+        ], [
+            'foto_ktp.required' => 'Kolom foto KTP wajib diisi.',
+            'foto_ktp.mimes' => 'Kolom foto KTP harus berupa file dengan tipe: jpeg, png.',
+            'foto_ktp.max' => 'Kolom foto KTP tidak boleh lebih dari 2048 kilobyte.',
+        ]);
 
+        // Proses penyimpanan data
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
@@ -55,14 +63,18 @@ class KeteranganUsahaController extends BaseController
             $data->status = "BELUM TERVERIFIKASI";
             $data->foto_ktp = $fotoKtp;
             $data->save();
+
+            Session::flash('status', 'success');
+            Session::flash('message', 'Data berhasil dikirim!');
         } catch (\Exception $e) {
             Session::flash('status', 'warning');
             Session::flash('message', 'Data gagal dikirim!');
         }
-        Session::flash('status', 'success');
-        Session::flash('message', 'Data berhasil dikirim!');
+
         return redirect()->route('landing');
     }
+
+
 
     public function show($params)
     {

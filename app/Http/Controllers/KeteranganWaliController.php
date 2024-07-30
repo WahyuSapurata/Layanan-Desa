@@ -29,6 +29,14 @@ class KeteranganWaliController extends BaseController
     {
         $data = array();
 
+        $request->validate([
+            'foto_ktp' => 'required|mimes:jpeg,png|max:2048', // Menentukan tipe file dan ukuran maksimum
+        ], [
+            'foto_ktp.required' => 'Kolom foto KTP wajib diisi.',
+            'foto_ktp.mimes' => 'Kolom foto KTP harus berupa file dengan tipe: jpeg, png.',
+            'foto_ktp.max' => 'Kolom foto KTP tidak boleh lebih dari 2048 kilobyte.',
+        ]);
+
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
