@@ -43,6 +43,13 @@
                                             <th>Agama</th>
                                             <th>Pendidikan</th>
                                             <th>Jenis Pekerjaan</th>
+                                            <th>Status Kawin</th>
+                                            <th>Status Hubungan</th>
+                                            <th>Golongan Darah</th>
+                                            <th>Nama Ayah</th>
+                                            <th>Nama Ibu</th>
+                                            <th>Rt</th>
+                                            <th>Rw</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -177,6 +184,48 @@
                         <small class="text-danger jenis_pekerjaan_error"></small>
                     </div>
 
+                    <div class="mb-10">
+                        <label class="form-label">Status Kawin</label>
+                        <input type="text" id="status_kawin" class="form-control" name="status_kawin">
+                        <small class="text-danger status_kawin_error"></small>
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="form-label">Status Hubungan</label>
+                        <input type="text" id="status_hubungan" class="form-control" name="status_hubungan">
+                        <small class="text-danger status_hubungan_error"></small>
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="form-label">Golongan Darah</label>
+                        <input type="text" id="golongan_darah" class="form-control" name="golongan_darah">
+                        <small class="text-danger golongan_darah_error"></small>
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="form-label">Nama Ayah</label>
+                        <input type="text" id="nama_ayah" class="form-control" name="nama_ayah">
+                        <small class="text-danger nama_ayah_error"></small>
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="form-label">Nama Ibu</label>
+                        <input type="text" id="nama_ibu" class="form-control" name="nama_ibu">
+                        <small class="text-danger nama_ibu_error"></small>
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="form-label">Rt</label>
+                        <input type="text" id="rt" class="form-control" name="rt">
+                        <small class="text-danger rt_error"></small>
+                    </div>
+
+                    <div class="mb-10">
+                        <label class="form-label">Rw</label>
+                        <input type="text" id="rw" class="form-control" name="rw">
+                        <small class="text-danger rw_error"></small>
+                    </div>
+
                     <div class="separator separator-dashed mt-8 mb-5"></div>
                     <div class="d-flex gap-5">
                         <button type="submit" class="btn btn-primary btn-sm btn-submit d-flex align-items-center"><i
@@ -284,6 +333,27 @@
                         className: 'text-center',
                     }, {
                         data: 'jenis_pekerjaan',
+                        className: 'text-center',
+                    }, {
+                        data: 'status_kawin',
+                        className: 'text-center',
+                    }, {
+                        data: 'status_hubungan',
+                        className: 'text-center',
+                    }, {
+                        data: 'golongan_darah',
+                        className: 'text-center',
+                    }, {
+                        data: 'nama_ayah',
+                        className: 'text-center',
+                    }, {
+                        data: 'nama_ibu',
+                        className: 'text-center',
+                    }, {
+                        data: 'rt',
+                        className: 'text-center',
+                    }, {
+                        data: 'rw',
                         className: 'text-center',
                     },
                     {

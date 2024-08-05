@@ -23,7 +23,6 @@ class StoreInventorisRequest extends FormRequest
     {
         return [
             'nama_barang' => 'required',
-            'kategori' => 'required',
             'kondisi' => 'required',
             'jumlah' => 'required',
             'tanggal_pembelian' => 'required',
@@ -36,7 +35,6 @@ class StoreInventorisRequest extends FormRequest
     {
         return [
             'nama_barang.required' => 'Kolom nama barang harus di isi.',
-            'kategori.required' => 'Kolom kategori harus di isi.',
             'kondisi.required' => 'Kolom kondisi harus di isi.',
             'jumlah.required' => 'Kolom jumlah harus di isi.',
             'tanggal_pembelian.required' => 'Kolom tanggal pembelian harus di isi.',

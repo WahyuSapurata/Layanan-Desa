@@ -15,7 +15,6 @@ class Inventoris extends Model
     protected $fillable = [
         'uuid',
         'nama_barang',
-        'kategori',
         'kondisi',
         'jumlah',
         'tanggal_pembelian',

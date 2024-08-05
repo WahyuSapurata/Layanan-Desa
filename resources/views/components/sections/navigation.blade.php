@@ -669,7 +669,13 @@
 
                         <div class="mb-10">
                             <label for="agama" class="form-label">Agama</label>
-                            <input class="form-control" type="text" name="agama" id="agama">
+                            <select name="agama" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                            </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 
@@ -808,14 +814,25 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="kewarganegaran" class="form-label">Kewarganegaraan</label>
-                            <input class="form-control" type="text" name="kewarganegaran" id="kewarganegaran">
-                            <small class="text-danger kewarganegaran_error"></small>
+                            <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
+                            <select name="kewarganegaraan" class="form-select"
+                                data-placeholder="Pilih jenis kewarganegaraan">
+                                <option></option>
+                                <option value="indonesia">Indonesia</option>
+                                <option value="asin">Asing</option>
+                            </select>
+                            <small class="text-danger kewarganegaraan_error"></small>
                         </div>
 
                         <div class="mb-10">
                             <label for="agama" class="form-label">Agama</label>
-                            <input class="form-control" type="text" name="agama" id="agama">
+                            <select name="agama" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                            </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 
@@ -962,14 +979,24 @@
 
                         <div class="mb-10">
                             <label for="agama" class="form-label">Agama</label>
-                            <input class="form-control" type="text" name="agama" id="agama">
+                            <select name="agama" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                            </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 
                         <div class="mb-10">
                             <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
-                            <input class="form-control" type="text" name="kewarganegaraan"
-                                id="kewarganegaraan">
+                            <select name="kewarganegaraan" class="form-select"
+                                data-placeholder="Pilih jenis kewarganegaraan">
+                                <option></option>
+                                <option value="indonesia">Indonesia</option>
+                                <option value="asin">Asing</option>
+                            </select>
                             <small class="text-danger kewarganegaraan_error"></small>
                         </div>
 
@@ -1086,8 +1113,12 @@
 
                         <div class="mb-10">
                             <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
-                            <input class="form-control" type="text" name="kewarganegaraan"
-                                id="kewarganegaraan">
+                            <select name="kewarganegaraan" class="form-select"
+                                data-placeholder="Pilih jenis kewarganegaraan">
+                                <option></option>
+                                <option value="indonesia">Indonesia</option>
+                                <option value="asin">Asing</option>
+                            </select>
                             <small class="text-danger kewarganegaraan_error"></small>
                         </div>
 
@@ -1109,7 +1140,13 @@
 
                         <div class="mb-10">
                             <label for="agama" class="form-label">Agama</label>
-                            <input class="form-control" type="text" name="agama" id="agama">
+                            <select name="agama" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                            </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 

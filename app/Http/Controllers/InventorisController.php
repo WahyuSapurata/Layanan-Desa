@@ -30,7 +30,6 @@ class InventorisController extends BaseController
         try {
             $data = new Inventoris();
             $data->nama_barang = $storeInventorisRequest->nama_barang;
-            $data->kategori = $storeInventorisRequest->kategori;
             $data->kondisi = $storeInventorisRequest->kondisi;
             $data->jumlah = $storeInventorisRequest->jumlah;
             $data->tanggal_pembelian = $storeInventorisRequest->tanggal_pembelian;
@@ -60,7 +59,6 @@ class InventorisController extends BaseController
         try {
             $data = Inventoris::where('uuid', $params)->first();
             $data->nama_barang = $storeInventorisRequest->nama_barang;
-            $data->kategori = $storeInventorisRequest->kategori;
             $data->kondisi = $storeInventorisRequest->kondisi;
             $data->jumlah = $storeInventorisRequest->jumlah;
             $data->tanggal_pembelian = $storeInventorisRequest->tanggal_pembelian;

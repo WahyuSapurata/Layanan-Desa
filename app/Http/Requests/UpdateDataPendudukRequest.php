@@ -31,6 +31,13 @@ class UpdateDataPendudukRequest extends FormRequest
             'pendidikan' => 'required',
             'jenis_pekerjaan' => 'required',
             'no_kk' => 'required',
+            'status_kawin' => 'required',
+            'status_hubungan' => 'required',
+            'golongan_darah' => 'required',
+            'nama_ayah' => 'required',
+            'nama_ibu' => 'required',
+            'rt' => 'required',
+            'rw' => 'required',
         ];
     }
 
@@ -47,6 +54,13 @@ class UpdateDataPendudukRequest extends FormRequest
             'pendidikan.required' => 'Kolom pendidikan harus di isi.',
             'jenis_pekerjaan.required' => 'Kolom jenis pekerjaan harus di isi.',
             'no_kk.required' => 'Kolom no kk harus di isi.',
+            'status_kawin.required' => 'Kolom status kawin harus di isi.',
+            'status_hubungan.required' => 'Kolom status hubungan harus di isi.',
+            'golongan_darah.required' => 'Kolom golongan darah harus di isi.',
+            'nama_ayah.required' => 'Kolom nama ayah harus di isi.',
+            'nama_ibu.required' => 'Kolom nama ibu harus di isi.',
+            'rt.required' => 'Kolom rt harus di isi.',
+            'rw.required' => 'Kolom rw harus di isi.',
         ];
     }
 }

@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->uuid('uuid');
             $table->string('nama_barang');
-            $table->string('kategori');
             $table->string('kondisi');
             $table->string('jumlah');
             $table->string('tanggal_pembelian');

@@ -107,12 +107,6 @@
                     <input type="hidden" name="uuid">
 
                     <div class="mb-10">
-                        <label class="form-label">Kategori</label>
-                        <input type="text" id="kategori" class="form-control" name="kategori">
-                        <small class="text-danger kategori_error"></small>
-                    </div>
-
-                    <div class="mb-10">
                         <label class="form-label">Nama Barang</label>
                         <input type="text" id="nama_barang" class="form-control" name="nama_barang">
                         <small class="text-danger nama_barang_error"></small>
@@ -224,8 +218,6 @@
                 $('#kt_table_data').DataTable().clear().destroy();
             }
 
-            var groupedData = {}; // Menyimpan nilai grup sebelumnya
-
             // Initialize DataTable
             $('#kt_table_data').DataTable({
                 responsive: true,
@@ -300,35 +292,6 @@
                         `;
                     },
                 }],
-
-                rowGroup: {
-                    dataSrc: 'kategori', // Ganti 'jenis_fasilitas_kesehatan' dengan nama kolom yang ingin digunakan sebagai grup
-                    startRender: function(rows, group) {
-                        if (!groupedData[group]) {
-                            console.log(group);
-                            groupedData[group] = 1;
-                            return $("<tr/>")
-                                .append(
-                                    '<td colspan="10" style="background-color: #FFFFFF;">' +
-                                    '<span style="font-weight: bold; color: #5caceb; padding: 2px 12px; font-size: 12px; border-radius: 8px; text-transform: uppercase;">' +
-                                    group +
-                                    '</span>' +
-                                    '</td>'
-                                ); // Modify the colspan value based on the number of columns in your table
-                        } else {
-                            console.log('tes');
-                            groupedData[group]++;
-                            return $("<tr/>")
-                                .append(
-                                    '<td colspan="10" style="background-color: #FFFFFF;">' +
-                                    '<span style="font-weight: bold; color: #5caceb; padding: 2px 12px; font-size: 12px; border-radius: 8px; text-transform: uppercase;">' +
-                                    group +
-                                    '</span>' +
-                                    '</td>'
-                                ); // Modify the colspan value based on the number of columns in your table
-                        }
-                    },
-                },
                 rowCallback: function(row, data, index) {
                     var api = this.api();
                     var startIndex = api.context[0]._iDisplayStart;

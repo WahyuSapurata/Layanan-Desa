@@ -23,6 +23,13 @@ return new class extends Migration
             $table->string('pendidikan');
             $table->string('jenis_pekerjaan');
             $table->string('no_kk');
+            $table->string('status_kawin');
+            $table->string('status_hubungan');
+            $table->string('golongan_darah');
+            $table->string('nama_ayah');
+            $table->string('nama_ibu');
+            $table->string('rt');
+            $table->string('rw');
             $table->timestamps();
         });
     }

@@ -23,6 +23,13 @@ class DataPenduduk extends Model
         'pendidikan',
         'jenis_pekerjaan',
         'no_kk',
+        'status_kawin',
+        'status_hubungan',
+        'golongan_darah',
+        'nama_ayah',
+        'nama_ibu',
+        'rt',
+        'rw',
     ];
 
     protected static function boot()

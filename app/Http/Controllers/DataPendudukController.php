@@ -37,6 +37,13 @@ class DataPendudukController extends BaseController
             $data->pendidikan = $storeDataPendudukRequest->pendidikan;
             $data->jenis_pekerjaan = $storeDataPendudukRequest->jenis_pekerjaan;
             $data->no_kk = $storeDataPendudukRequest->no_kk;
+            $data->status_kawin = $storeDataPendudukRequest->status_kawin;
+            $data->status_hubungan = $storeDataPendudukRequest->status_hubungan;
+            $data->golongan_darah = $storeDataPendudukRequest->golongan_darah;
+            $data->nama_ayah = $storeDataPendudukRequest->nama_ayah;
+            $data->nama_ibu = $storeDataPendudukRequest->nama_ibu;
+            $data->rt = $storeDataPendudukRequest->rt;
+            $data->rw = $storeDataPendudukRequest->rw;
             $data->save();
         } catch (\Exception $e) {
             return $this->sendError($e->getMessage(), $e->getMessage(), 400);
@@ -68,6 +75,13 @@ class DataPendudukController extends BaseController
             $data->pendidikan = $updateDataPendudukRequest->pendidikan;
             $data->jenis_pekerjaan = $updateDataPendudukRequest->jenis_pekerjaan;
             $data->no_kk = $updateDataPendudukRequest->no_kk;
+            $data->status_kawin = $updateDataPendudukRequest->status_kawin;
+            $data->status_hubungan = $updateDataPendudukRequest->status_hubungan;
+            $data->golongan_darah = $updateDataPendudukRequest->golongan_darah;
+            $data->nama_ayah = $updateDataPendudukRequest->nama_ayah;
+            $data->nama_ibu = $updateDataPendudukRequest->nama_ibu;
+            $data->rt = $updateDataPendudukRequest->rt;
+            $data->rw = $updateDataPendudukRequest->rw;
             $data->save();
         } catch (\Exception $e) {
             return $this->sendError($e->getMessage(), $e->getMessage(), 400);
