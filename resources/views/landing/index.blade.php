@@ -418,7 +418,7 @@
     <!--end::Root-->
     <div
         style="position: fixed; bottom: 105px; right: 0; padding: 10px; background-color: white; border: 2px solid; border-right: none; border-start-start-radius: 25px; border-bottom-left-radius: 10px; z-index: 2;">
-        <a href="https://google.com" target="_blank">
+        <a href="https://wa.me/085285862963" target="_blank">
             <div class="d-flex align-items-center gap-2">
                 <img class="w-35px" src="{{ asset('logo_wa.png') }}" alt="">
                 <div>Contact Us</div>

@@ -117,7 +117,7 @@
 
                     <div class="mb-10">
                         <label class="form-label">No KK</label>
-                        <input type="text" id="no_kk" class="form-control" name="no_kk">
+                        <input type="number" id="no_kk" class="form-control" name="no_kk">
                         <small class="text-danger no_kk_error"></small>
                     </div>
 
@@ -129,7 +129,7 @@
 
                     <div class="mb-10">
                         <label class="form-label">NIK</label>
-                        <input type="text" id="nik" class="form-control" name="nik">
+                        <input type="number" id="nik" class="form-control" name="nik">
                         <small class="text-danger nik_error"></small>
                     </div>
 
@@ -168,7 +168,16 @@
 
                     <div class="mb-10">
                         <label class="form-label">Agama</label>
-                        <input type="text" id="agama" class="form-control" name="agama">
+                        <select name="agama" class="form-select" data-placeholder="Pilih agama">
+                            <option></option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="kristen katolik">Kristen Katolik</option>
+                            <option value="kristen protestan">Kristen Protestan</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
                         <small class="text-danger agama_error"></small>
                     </div>
 
@@ -180,13 +189,27 @@
 
                     <div class="mb-10">
                         <label class="form-label">Jenis Pekerjaan</label>
-                        <input type="text" id="jenis_pekerjaan" class="form-control" name="jenis_pekerjaan">
+                        <select name="jenis_pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                            <option></option>
+                            <option value="islam">Petani</option>
+                            <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                            <option value="pns">Pns</option>
+                            <option value="buruh">Buruh</option>
+                            <option value="karyawan swasta">Karyawan Swasta</option>
+                            <option value="guru">Guru</option>
+                            <option value="bidan">Bidan</option>
+                            <option value="perawat">Perawat</option>
+                        </select>
                         <small class="text-danger jenis_pekerjaan_error"></small>
                     </div>
 
                     <div class="mb-10">
                         <label class="form-label">Status Kawin</label>
-                        <input type="text" id="status_kawin" class="form-control" name="status_kawin">
+                        <select name="status_kawin" class="form-select" data-placeholder="Pilih status">
+                            <option></option>
+                            <option value="kawin">Kawin</option>
+                            <option value="belum kawin">Belum Kawin</option>
+                        </select>
                         <small class="text-danger status_kawin_error"></small>
                     </div>
 

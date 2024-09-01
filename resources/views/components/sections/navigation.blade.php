@@ -85,13 +85,26 @@
                                 <option value="kristen">Kristen</option>
                                 <option value="hindu">Hindu</option>
                                 <option value="budha">Budha</option>
+                                <option value="kristen katolik">Kristen Katolik</option>
+                                <option value="kristen protestan">Kristen Protestan</option>
+                                <option value="konghucu">Konghucu</option>
                             </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 
                         <div class="mb-10">
                             <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan">
+                            <select name="pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_error"></small>
                         </div>
 
@@ -170,7 +183,17 @@
 
                         <div class="mb-10">
                             <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan">
+                            <select name="pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_error"></small>
                         </div>
 
@@ -663,7 +686,17 @@
 
                         <div class="mb-10">
                             <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan">
+                            <select name="pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_error"></small>
                         </div>
 
@@ -675,6 +708,9 @@
                                 <option value="kristen">Kristen</option>
                                 <option value="hindu">Hindu</option>
                                 <option value="budha">Budha</option>
+                                <option value="kristen katolik">Kristen Katolik</option>
+                                <option value="kristen protestan">Kristen Protestan</option>
+                                <option value="konghucu">Konghucu</option>
                             </select>
                             <small class="text-danger agama_error"></small>
                         </div>
@@ -832,13 +868,26 @@
                                 <option value="kristen">Kristen</option>
                                 <option value="hindu">Hindu</option>
                                 <option value="budha">Budha</option>
+                                <option value="kristen katolik">Kristen Katolik</option>
+                                <option value="kristen protestan">Kristen Protestan</option>
+                                <option value="konghucu">Konghucu</option>
                             </select>
                             <small class="text-danger agama_error"></small>
                         </div>
 
                         <div class="mb-10">
                             <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan">
+                            <select name="pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_error"></small>
                         </div>
 
@@ -973,7 +1022,17 @@
 
                         <div class="mb-10">
                             <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan">
+                            <select name="pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_error"></small>
                         </div>
 
@@ -985,6 +1044,9 @@
                                 <option value="kristen">Kristen</option>
                                 <option value="hindu">Hindu</option>
                                 <option value="budha">Budha</option>
+                                <option value="kristen katolik">Kristen Katolik</option>
+                                <option value="kristen protestan">Kristen Protestan</option>
+                                <option value="konghucu">Konghucu</option>
                             </select>
                             <small class="text-danger agama_error"></small>
                         </div>
@@ -1134,7 +1196,17 @@
 
                         <div class="mb-10">
                             <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan">
+                            <select name="pekerjaan" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_error"></small>
                         </div>
 
@@ -1146,6 +1218,9 @@
                                 <option value="kristen">Kristen</option>
                                 <option value="hindu">Hindu</option>
                                 <option value="budha">Budha</option>
+                                <option value="kristen katolik">Kristen Katolik</option>
+                                <option value="kristen protestan">Kristen Protestan</option>
+                                <option value="konghucu">Konghucu</option>
                             </select>
                             <small class="text-danger agama_error"></small>
                         </div>

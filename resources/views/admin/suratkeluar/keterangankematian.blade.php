@@ -341,6 +341,8 @@
 
         const verifikasi = [{
             text: "verifikasi"
+        }, {
+            text: "tolak"
         }];
 
         $(function() {
