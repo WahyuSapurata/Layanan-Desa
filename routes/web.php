@@ -132,6 +132,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
             Route::get('/export-ket-tidak_mampu/{params}', 'KeteranganTidakMampuController@export')->name('export-ket-tidak_mampu');
         });
 
+        Route::get('/export-data-penduduk', 'DataPendudukController@export')->name('export-data-penduduk');
+        Route::get('/export-data-inventaris', 'InventorisController@export')->name('export-data-inventaris');
+
         Route::get('/ubahpassword', 'UbahPassword@index')->name('ubahpassword');
         Route::post('/update-password/{params}', 'UbahPassword@update')->name('update-password');
     });

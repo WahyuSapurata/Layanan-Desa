@@ -6,6 +6,10 @@ use App\Http\Requests\StoreDataPendudukRequest;
 use App\Http\Requests\UpdateDataPendudukRequest;
 use App\Models\DataPenduduk;
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 class DataPendudukController extends BaseController
 {
     public function index()
@@ -100,5 +104,90 @@ class DataPendudukController extends BaseController
             return $this->sendError($e->getMessage(), $e->getMessage(), 400);
         }
         return $this->sendResponse($data, 'Delete data success');
+    }
+
+    public function export()
+    {
+        // Mengambil semua data pengguna
+        $dataFull = DataPenduduk::all();
+
+        // Buat objek Spreadsheet
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+
+        // Setup halaman dan gaya default
+        $sheet->getPageSetup()->setOrientation(\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::ORIENTATION_LANDSCAPE);
+        $sheet->getPageSetup()->setPaperSize(\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::PAPERSIZE_FOLIO);
+        $spreadsheet->getDefaultStyle()->getFont()->setName('Times New Roman')->setSize(12);
+        $sheet->getRowDimension(1)->setRowHeight(30);
+
+        // Judul dan pengaturan lebar kolom otomatis
+        $sheet->setCellValue('A1', 'DATA PENDUDUK')->mergeCells('A1:P1');
+        $sheet->getStyle('A1')->applyFromArray([
+            'alignment' => [
+                'vertical' => Alignment::VERTICAL_CENTER,
+                'horizontal' => Alignment::HORIZONTAL_CENTER,
+            ]
+        ]);
+
+        // Header kolom
+        $headers = ['NO', 'NAMA LENGKAP', 'NIK', 'JENIS KELAMIN', 'TEMPAT LAHIR', 'TANGGAL LAHIR', 'AGAMA', 'PENDIDIKAN', 'JENIS PEKERJAAN', 'STATUS KAWIN', 'STATUS HUBUNGAN', 'GOLONGAN DARAH', 'NAMA AYAH', 'NAMA IBU', 'RT', 'RW'];
+        $sheet->fromArray($headers, NULL, 'A3');
+
+        // Gaya header
+        $sheet->getStyle('A3:P3')->applyFromArray([
+            'fill' => [
+                'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+                'startColor' => ['rgb' => 'ACB9CA'],
+            ],
+            'alignment' => [
+                'vertical' => Alignment::VERTICAL_CENTER,
+                'horizontal' => Alignment::HORIZONTAL_CENTER,
+            ],
+            'font' => ['bold' => true],
+        ]);
+
+        // Mengisi data
+        $row = 4;
+        foreach ($dataFull as $index => $lap) {
+            $sheet->setCellValue('A' . $row, $index + 1);
+            $sheet->setCellValue('B' . $row, $lap->nama_lengkap);
+            $sheet->setCellValue('C' . $row, $lap->nik);
+            $sheet->setCellValue('D' . $row, $lap->jenis_kelamin);
+            $sheet->setCellValue('E' . $row, $lap->tempat_lahir);
+            $sheet->setCellValue('F' . $row, $lap->tanggal_lahir);
+            $sheet->setCellValue('G' . $row, $lap->agama);
+            $sheet->setCellValue('H' . $row, $lap->pendidikan);
+            $sheet->setCellValue('I' . $row, $lap->jenis_pekerjaan);
+            $sheet->setCellValue('J' . $row, $lap->status_kawin);
+            $sheet->setCellValue('K' . $row, $lap->status_hubungan);
+            $sheet->setCellValue('L' . $row, $lap->golongan_darah);
+            $sheet->setCellValue('M' . $row, $lap->nama_ayah);
+            $sheet->setCellValue('N' . $row, $lap->nama_ibu);
+            $sheet->setCellValue('O' . $row, $lap->rt);
+            $sheet->setCellValue('P' . $row, $lap->rw);
+            $row++;
+        }
+
+        // Penerapan border untuk semua sel yang berisi data
+        $sheet->getStyle('A3:P' . ($row - 1))->applyFromArray([
+            'borders' => [
+                'allBorders' => [
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN,
+                ],
+            ],
+        ]);
+
+        // Pengaturan lebar kolom otomatis
+        foreach (range('A', $sheet->getHighestDataColumn()) as $column) {
+            $sheet->getColumnDimension($column)->setAutoSize(true);
+        }
+
+        // Simpan dan kirim file Excel
+        $excelFileName = 'laporan_data_penduduk.xlsx';
+        $writer = new Xlsx($spreadsheet);
+        $writer->save(public_path($excelFileName));
+
+        return response()->download(public_path($excelFileName));
     }
 }

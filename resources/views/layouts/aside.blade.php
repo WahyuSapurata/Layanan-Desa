@@ -94,7 +94,7 @@
                             <!--end::Svg Icon-->
                         </span>
                         <span class="menu-title"
-                            style="{{ isset($path[1]) && $path[1] === 'data-inventoris' ? 'color: #F4BE2A' : 'color: #FFFFFF' }}">Inventoris</span>
+                            style="{{ isset($path[1]) && $path[1] === 'data-inventoris' ? 'color: #F4BE2A' : 'color: #FFFFFF' }}">Inventaris</span>
                     </a>
                 </div>
                 <!--end::Menu item-->
