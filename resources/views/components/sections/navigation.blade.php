@@ -343,19 +343,9 @@
                                         <small class="text-danger umur_error"></small>
                                     </div>
                                     <div class="mb-5">
-                                        <label class="form-label">Tanduk</label>
-                                        <input type="text" class="form-control tanduk" name="tanduk">
-                                        <small class="text-danger tanduk_error"></small>
-                                    </div>
-                                    <div class="mb-5">
-                                        <label class="form-label">Pusar</label>
-                                        <input type="text" class="form-control pusar" name="pusar">
-                                        <small class="text-danger pusar_error"></small>
-                                    </div>
-                                    <div class="mb-5">
-                                        <label class="form-label">Cap Bakar</label>
-                                        <input type="text" class="form-control cap_bakar" name="cap_bakar">
-                                        <small class="text-danger cap_bakar_error"></small>
+                                        <label class="form-label">Ciri Khusus</label>
+                                        <input type="text" class="form-control ciri" name="ciri">
+                                        <small class="text-danger ciri_error"></small>
                                     </div>
                                     <div class="mb-5">
                                         <label class="form-label">No Kartu</label>
@@ -1292,19 +1282,9 @@
             <small class="text-danger umur_error"></small>
         </div>
         <div class="mb-5">
-            <label class="form-label">Tanduk</label>
-            <input type="text" class="form-control tanduk" name="tanduk">
-            <small class="text-danger tanduk_error"></small>
-        </div>
-        <div class="mb-5">
-            <label class="form-label">Pusar</label>
-            <input type="text" class="form-control pusar" name="pusar">
-            <small class="text-danger pusar_error"></small>
-        </div>
-        <div class="mb-5">
-            <label class="form-label">Cap Bakar</label>
-            <input type="text" class="form-control cap_bakar" name="cap_bakar">
-            <small class="text-danger cap_bakar_error"></small>
+            <label class="form-label">Ciri Khusus</label>
+            <input type="text" class="form-control ciri" name="ciri">
+            <small class="text-danger ciri_error"></small>
         </div>
         <div class="mb-5">
             <label class="form-label">No Kartu</label>
