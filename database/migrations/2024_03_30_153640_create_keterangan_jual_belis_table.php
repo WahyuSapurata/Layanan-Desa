@@ -20,12 +20,14 @@ return new class extends Migration
             $table->string('tanggal_lahir_penjual');
             $table->string('pekerjaan_penjual');
             $table->string('alamat_penjual');
+            $table->string('nomor_penjual');
             $table->string('nama_pembeli');
             $table->string('nik_pembeli');
             $table->string('tempat_lahir_pembeli');
             $table->string('tanggal_lahir_pembeli');
             $table->string('pekerjaan_pembeli');
             $table->string('alamat_pembeli');
+            $table->string('nomor_pembeli');
             $table->string('no_sppt');
             $table->string('nama_pemilik_tanah');
             $table->string('no_sertifikat');
@@ -40,7 +42,6 @@ return new class extends Migration
             $table->string('saksi2');
             $table->string('saksi3');
             $table->string('foto_ktp');
-            $table->string('no_telepon');
             $table->string('status');
             $table->string('no_reg')->nullable();
             $table->string('nomor_surat')->nullable();

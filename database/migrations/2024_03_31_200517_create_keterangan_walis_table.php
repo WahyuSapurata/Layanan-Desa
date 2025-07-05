@@ -28,7 +28,6 @@ return new class extends Migration
             $table->string('nama_anak');
             $table->string('tempat_lahir_anak');
             $table->string('tanggal_lahir_anak');
-            $table->string('nama_bank');
             $table->string('no_telepon');
             $table->string('foto_ktp');
             $table->string('status')->nullable();

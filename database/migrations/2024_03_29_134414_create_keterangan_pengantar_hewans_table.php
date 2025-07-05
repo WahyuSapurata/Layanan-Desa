@@ -16,18 +16,17 @@ return new class extends Migration
             $table->uuid('uuid');
             $table->string('nomor_surat')->nullable();
             $table->string('nama');
-            $table->string('umur');
-            $table->string('pekerjaan');
+            $table->string('nik_penjual');
+            $table->string('nomor_penjual');
             $table->string('alamat');
             $table->string('jumlah_hewan');
             $table->json('data_hewan');
             $table->string('nama_pembeli');
-            $table->string('umur_pembeli');
-            $table->string('pekerjaan_pembeli');
+            $table->string('nik_pembeli');
+            $table->string('nomor_pembeli');
             $table->string('alamat_pembeli');
             $table->string('foto_ktp');
             $table->string('status');
-            $table->string('no_telepon');
             $table->timestamps();
         });
     }

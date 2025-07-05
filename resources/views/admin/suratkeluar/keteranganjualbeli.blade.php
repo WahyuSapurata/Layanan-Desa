@@ -210,7 +210,7 @@
                     data: 'nik_pembeli',
                     className: 'text-center',
                 }, {
-                    data: 'no_telepon',
+                    data: 'nomor_penjual',
                     className: 'text-center',
                 }, {
                     data: 'foto_ktp',

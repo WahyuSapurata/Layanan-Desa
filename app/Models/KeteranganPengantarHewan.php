@@ -16,18 +16,17 @@ class KeteranganPengantarHewan extends Model
         'uuid',
         'nomor_surat',
         'nama',
-        'umur',
-        'pekerjaan',
+        'nik_penjual',
+        'nomor_penjual',
         'alamat',
         'jumlah_hewan',
         'data_hewan',
         'nama_pembeli',
-        'umur_pembeli',
-        'pekerjaan_pembeli',
+        'nik_pembeli',
+        'nomor_pembeli',
         'alamat_pembeli',
         'foto_ktp',
         'status',
-        'no_telepon',
     ];
 
     // Jika kolom yang diharapkan menyimpan array, tambahkan di sini:

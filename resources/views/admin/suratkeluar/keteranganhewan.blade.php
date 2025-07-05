@@ -187,7 +187,7 @@
                     data: 'nama',
                     className: 'text-center',
                 }, {
-                    data: 'no_telepon',
+                    data: 'nomor_penjual',
                     className: 'text-center',
                 }, {
                     data: 'foto_ktp',

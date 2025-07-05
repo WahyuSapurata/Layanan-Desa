@@ -28,10 +28,9 @@ class KeteranganWali extends Model
         'nama_anak',
         'tempat_lahir_anak',
         'tanggal_lahir_anak',
-        'nama_bank',
-        'status',
         'no_telepon',
         'foto_ktp',
+        'status',
     ];
 
     protected static function boot()

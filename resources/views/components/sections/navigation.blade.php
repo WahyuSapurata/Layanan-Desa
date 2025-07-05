@@ -204,14 +204,14 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="klarifikasi_pindah" class="form-label">Klarifikasi Pindah</label>
+                            <label for="klarifikasi_pindah" class="form-label">Alasan Pindah</label>
                             <input class="form-control" type="text" name="klarifikasi_pindah"
                                 id="klarifikasi_pindah">
                             <small class="text-danger klarifikasi_pindah_error"></small>
                         </div>
 
                         <div class="mb-10">
-                            <label for="rencana_pindah" class="form-label">Rencana Pindah</label>
+                            <label for="rencana_pindah" class="form-label">Tanggal Pindah</label>
                             <input class="form-control kt_datepicker_1" type="text" name="rencana_pindah"
                                 id="rencana_pindah">
                             <small class="text-danger rencana_pindah_error"></small>
@@ -279,39 +279,28 @@
                     <form class="form-data" enctype="multipart/form-data">
                         <label class="form-label fs-4">Data Diri</label>
                         <div class="mb-10">
-                            <label for="nama" class="form-label">Nama</label>
+                            <label for="nama" class="form-label">Nama Penjual</label>
                             <input class="form-control" type="text" name="nama" id="nama_penjual">
                             <small class="text-danger nama_error"></small>
                         </div>
 
                         <div class="mb-10">
-                            <label for="umur" class="form-label">Umur</label>
-                            <input class="form-control" type="number" name="umur" id="umur">
-                            <small class="text-danger umur_error"></small>
+                            <label for="nik_penjual" class="form-label">NIK Penjual</label>
+                            <input class="form-control" type="number" name="nik_penjual" id="nik_penjual">
+                            <small class="text-danger nik_penjual_error"></small>
                         </div>
 
                         <div class="mb-10">
-                            <label for="pekerjaan" class="form-label">Pekerjaan</label>
-                            <input class="form-control" type="text" name="pekerjaan" id="pekerjaan_penjual">
-                            <small class="text-danger pekerjaan_error"></small>
+                            <label for="nomor_penjual" class="form-label">Nomor Penjual</label>
+                            <input class="form-control" type="number" name="nomor_penjual"
+                                id="nomor_penjual_penjual">
+                            <small class="text-danger nomor_penjual_error"></small>
                         </div>
 
                         <div class="mb-10">
-                            <label for="alamat" class="form-label">Alamat</label>
+                            <label for="alamat" class="form-label">Alamat Penjual</label>
                             <input class="form-control" type="text" name="alamat" id="alamat_penjual">
                             <small class="text-danger alamat_error"></small>
-                        </div>
-
-                        <div class="mb-10">
-                            <label for="jumlah_hewan" class="form-label">Jumlah Hewan</label>
-                            <input class="form-control" type="number" name="jumlah_hewan" id="jumlah_hewan">
-                            <small class="text-danger jumlah_hewan_error"></small>
-                        </div>
-
-                        <div class="mb-10">
-                            <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="number" name="no_telepon" id="no_telepon_penjual">
-                            <small class="text-danger no_telepon_error"></small>
                         </div>
 
                         <div class="mb-10">
@@ -322,6 +311,13 @@
                         </div>
 
                         <label class="form-label fs-4">Data Hewan</label>
+
+                        <div class="mb-10">
+                            <label for="jumlah_hewan" class="form-label">Jumlah Hewan</label>
+                            <input class="form-control" type="number" name="jumlah_hewan" id="jumlah_hewan">
+                            <small class="text-danger jumlah_hewan_error"></small>
+                        </div>
+
                         <div class="mb-10">
                             <div class="inputs-container">
                                 <div class="data-hewan">
@@ -382,16 +378,15 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="umur_pembeli" class="form-label">Umur Pembeli</label>
-                            <input class="form-control" type="number" name="umur_pembeli" id="umur_pembeli">
-                            <small class="text-danger umur_pembeli_error"></small>
+                            <label for="nik_pembeli" class="form-label">NIK Pembeli</label>
+                            <input class="form-control" type="number" name="nik_pembeli" id="nik_pembeli">
+                            <small class="text-danger nik_pembeli_error"></small>
                         </div>
 
                         <div class="mb-10">
-                            <label for="pekerjaan_pembeli" class="form-label">Pekerjaan Pembeli</label>
-                            <input class="form-control" type="text" name="pekerjaan_pembeli"
-                                id="pekerjaan_pembeli">
-                            <small class="text-danger pekerjaan_pembeli_error"></small>
+                            <label for="nomor_pembeli" class="form-label">Nomor Pembeli</label>
+                            <input class="form-control" type="text" name="nomor_pembeli" id="nomor_pembeli">
+                            <small class="text-danger nomor_pembeli_error"></small>
                         </div>
 
                         <div class="mb-10">
@@ -477,6 +472,12 @@
                             <small class="text-danger alamat_penjual_error"></small>
                         </div>
 
+                        <div class="mb-10">
+                            <label for="nomor_penjual" class="form-label">Nomor Penjual</label>
+                            <input class="form-control" type="number" name="nomor_penjual" id="nomor_penjual">
+                            <small class="text-danger nomor_penjual_error"></small>
+                        </div>
+
                         <label class="form-label fs-4">Pihak Kedua</label>
                         <div class="mb-10">
                             <label for="nama_pembeli" class="form-label">Nama Pembeli</label>
@@ -516,6 +517,12 @@
                             <label for="alamat_pembeli" class="form-label">Alamat Pembeli</label>
                             <input class="form-control" type="text" name="alamat_pembeli" id="alamat_pembeli">
                             <small class="text-danger alamat_pembeli_error"></small>
+                        </div>
+
+                        <div class="mb-10">
+                            <label for="nomor_pembeli" class="form-label">Nomor Penjual</label>
+                            <input class="form-control" type="number" name="nomor_pembeli" id="nomor_pembeli">
+                            <small class="text-danger nomor_pembeli_error"></small>
                         </div>
 
                         <div class="mb-10">
@@ -597,12 +604,6 @@
                             <label for="saksi3" class="form-label">Saksi Ketiga</label>
                             <input class="form-control" type="text" name="saksi3" id="saksi3">
                             <small class="text-danger saksi3_error"></small>
-                        </div>
-
-                        <div class="mb-10">
-                            <label for="no_telepon" class="form-label">Nomor Telepon</label>
-                            <input class="form-control" type="number" name="no_telepon" id="no_telepon">
-                            <small class="text-danger no_telepon_error"></small>
                         </div>
 
                         <div class="mb-10">
@@ -752,12 +753,6 @@
                             <input class="form-control kt_datepicker_1" type="text" name="tanggal_lahir_anak"
                                 id="tanggal_lahir_anak">
                             <small class="text-danger tanggal_lahir_anak_error"></small>
-                        </div>
-
-                        <div class="mb-10">
-                            <label for="nama_bank" class="form-label">Nama Bank</label>
-                            <input class="form-control" type="text" name="nama_bank" id="nama_bank">
-                            <small class="text-danger nama_bank_error"></small>
                         </div>
 
                         <div class="mb-10">

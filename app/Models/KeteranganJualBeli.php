@@ -14,20 +14,20 @@ class KeteranganJualBeli extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'uuid',
-        'nomor_surat',
-        'no_reg',
         'nama_penjual',
         'nik_penjual',
         'tempat_lahir_penjual',
         'tanggal_lahir_penjual',
         'pekerjaan_penjual',
         'alamat_penjual',
+        'nomor_pembeli',
         'nama_pembeli',
         'nik_pembeli',
         'tempat_lahir_pembeli',
         'tanggal_lahir_pembeli',
         'pekerjaan_pembeli',
         'alamat_pembeli',
+        'nomor_pembeli',
         'no_sppt',
         'nama_pemilik_tanah',
         'no_sertifikat',
@@ -42,8 +42,9 @@ class KeteranganJualBeli extends Model
         'saksi2',
         'saksi3',
         'foto_ktp',
-        'no_telepon',
         'status',
+        'no_reg',
+        'nomor_surat',
     ];
 
     protected static function boot()

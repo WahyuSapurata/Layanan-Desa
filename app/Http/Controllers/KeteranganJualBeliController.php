@@ -53,12 +53,14 @@ class KeteranganJualBeliController extends BaseController
             $data->tanggal_lahir_penjual = $request->tanggal_lahir_penjual;
             $data->pekerjaan_penjual = $request->pekerjaan_penjual;
             $data->alamat_penjual = $request->alamat_penjual;
+            $data->nomor_penjual = $request->nomor_penjual;
             $data->nama_pembeli = $request->nama_pembeli;
             $data->nik_pembeli = $request->nik_pembeli;
             $data->tempat_lahir_pembeli = $request->tempat_lahir_pembeli;
             $data->tanggal_lahir_pembeli = $request->tanggal_lahir_pembeli;
             $data->pekerjaan_pembeli = $request->pekerjaan_pembeli;
             $data->alamat_pembeli = $request->alamat_pembeli;
+            $data->nomor_pembeli = $request->nomor_pembeli;
             $data->no_sppt = $request->no_sppt;
             $data->nama_pemilik_tanah = $request->nama_pemilik_tanah;
             $data->no_sertifikat = $request->no_sertifikat;
@@ -72,7 +74,6 @@ class KeteranganJualBeliController extends BaseController
             $data->saksi1 = $request->saksi1;
             $data->saksi2 = $request->saksi2;
             $data->saksi3 = $request->saksi3;
-            $data->no_telepon = $request->no_telepon;
             $data->status = "BELUM TERVERIFIKASI";
             $data->foto_ktp = $fotoKtp;
             $data->save();

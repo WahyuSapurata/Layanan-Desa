@@ -59,7 +59,6 @@ class KeteranganWaliController extends BaseController
             $data->nama_anak = $request->nama_anak;
             $data->tempat_lahir_anak = $request->tempat_lahir_anak;
             $data->tanggal_lahir_anak = $request->tanggal_lahir_anak;
-            $data->nama_bank = $request->nama_bank;
             $data->no_telepon = $request->no_telepon;
             $data->status = "BELUM TERVERIFIKASI";
             $data->foto_ktp = $fotoKtp;

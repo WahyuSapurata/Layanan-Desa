@@ -17,7 +17,7 @@
                                             <th>No KK</th>
                                             <th>Nama Kepala Keluarga</th>
                                             <th>Alamat</th>
-                                            <th>Klarifikasi Pindah</th>
+                                            <th>Alasan Pindah</th>
                                             <th>Jumlah Keluarga yang Pindah</th>
                                             <th>No Telepon</th>
                                             <th>Foto KK</th>

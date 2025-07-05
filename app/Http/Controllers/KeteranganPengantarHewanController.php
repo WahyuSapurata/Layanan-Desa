@@ -47,16 +47,15 @@ class KeteranganPengantarHewanController extends BaseController
         try {
             $data = new KeteranganPengantarHewan();
             $data->nama = $request->nama;
-            $data->umur = $request->umur;
-            $data->pekerjaan = $request->pekerjaan;
+            $data->nik_penjual = $request->nik_penjual;
+            $data->nomor_penjual = $request->nomor_penjual;
             $data->alamat = $request->alamat;
             $data->jumlah_hewan = $request->jumlah_hewan;
             $data->data_hewan = $request->input('data_hewan', []);
             $data->nama_pembeli = $request->nama_pembeli;
-            $data->umur_pembeli = $request->umur_pembeli;
-            $data->pekerjaan_pembeli = $request->pekerjaan_pembeli;
+            $data->nik_pembeli = $request->nik_pembeli;
+            $data->nomor_pembeli = $request->nomor_pembeli;
             $data->alamat_pembeli = $request->alamat_pembeli;
-            $data->no_telepon = $request->no_telepon;
             $data->status = "BELUM TERVERIFIKASI";
             $data->foto_ktp = $fotoKtp;
             $data->save();
