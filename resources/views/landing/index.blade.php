@@ -316,7 +316,8 @@
             </div>
             <!--end::Curve top-->
             <!--begin::Wrapper-->
-            <div class="pt-20" style="background-image: linear-gradient(to top, #080808cc, #0093dd)">
+            <div class="pt-20"
+                style="background-image: linear-gradient(to top, #080808cc, #0093dd); margin-top: -1px;">
                 <!--begin::Container-->
                 <div class="container">
                     <!--begin::Heading-->
