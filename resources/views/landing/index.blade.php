@@ -116,7 +116,7 @@
                                             <!--begin::Menu link-->
                                             <a class="menu-link nav-link py-3 px-4 px-xxl-6"
                                                 href="#struktur-otganisasi" data-kt-scroll-toggle="true"
-                                                data-kt-drawer-dismiss="true">STRUKTU
+                                                data-kt-drawer-dismiss="true">STRUKTUR
                                                 ORGANISASI</a>
                                             <!--end::Menu link-->
                                         </div>
