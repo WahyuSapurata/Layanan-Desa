@@ -30,7 +30,7 @@ class SuratMasukController extends BaseController
         $lampiran = '';
         if ($storeSuratMasukRequest->file('lampiran')) {
             $extension = $storeSuratMasukRequest->file('lampiran')->extension();
-            $lampiran = $storeSuratMasukRequest->no_surat . '-' . now()->timestamp . 'lampiran' . '.' . $extension;
+            $lampiran = 'surat-masuk' . '-' . now()->timestamp . 'lampiran' . '.' . $extension;
             $storeSuratMasukRequest->file('lampiran')->storeAs('public/lampiran', $lampiran);
         }
         try {
@@ -65,7 +65,7 @@ class SuratMasukController extends BaseController
         $lampiran = '';
         if ($storeSuratMasukRequest->file('lampiran')) {
             $extension = $storeSuratMasukRequest->file('lampiran')->extension();
-            $lampiran = $storeSuratMasukRequest->no_surat . '-' . now()->timestamp . 'lampiran' . '.' . $extension;
+            $lampiran = 'surat-masuk' . '-' . now()->timestamp . 'lampiran' . '.' . $extension;
             $storeSuratMasukRequest->file('lampiran')->storeAs('public/lampiran', $lampiran);
 
             Storage::delete('public/lampiran/' . $data->lampiran);
