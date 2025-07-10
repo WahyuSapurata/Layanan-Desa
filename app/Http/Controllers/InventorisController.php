@@ -14,7 +14,7 @@ class InventorisController extends BaseController
 {
     public function index()
     {
-        $module = 'Data Inventoris';
+        $module = 'Data Inventaris';
         return view('admin.inventoris.index', compact('module'));
     }
 

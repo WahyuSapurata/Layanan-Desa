@@ -430,7 +430,7 @@
 
                         <div class="mb-10">
                             <label for="nik_penjual" class="form-label">NIK Penjual</label>
-                            <input class="form-control" type="text" name="nik_penjual" id="nik_penjual">
+                            <input class="form-control" type="number" name="nik_penjual" id="nik_penjual">
                             <small class="text-danger nik_penjual_error"></small>
                         </div>
 

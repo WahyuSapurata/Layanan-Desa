@@ -382,49 +382,49 @@
                     },
                     {
                         data: 'nama_lengkap',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'nik',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'jenis_kelamin',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'tempat_lahir',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'tanggal_lahir',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'agama',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'pendidikan',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'jenis_pekerjaan',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'status_kawin',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'status_hubungan',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'golongan_darah',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'nama_ayah',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'nama_ibu',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'rt',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     }, {
                         data: 'rw',
-                        className: 'text-center',
+                        className: 'text-center text-uppercase',
                     },
                     {
                         data: 'uuid',

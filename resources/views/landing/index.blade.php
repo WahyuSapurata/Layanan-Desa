@@ -36,7 +36,7 @@
 <body data-kt-name="metronic" id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu"
     class="bg-white position-relative app-blank">
     <!--begin::Root-->
-    <div class="d-flex flex-column flex-root background-overlay" id="kt_app_root">
+    <div class="d-flex flex-column flex-root" id="kt_app_root">
         <!--begin::Header Section-->
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
@@ -143,7 +143,7 @@
                 <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9"
                     data-kt-sticky="true" data-kt-sticky-name="landing-partner"
                     data-kt-sticky-offset="{default: '200px', lg: '300px'}">
-                    <div class="position-absolute z-index-1 bottom-0 end-0 px-10">
+                    {{-- <div class="position-absolute z-index-1 bottom-0 end-0 px-10">
                         <div class="shadow-lg bg-white p-5 rounded-2 w-300px">
                             <div class="fw-bolder fs-5 text-center">Pengumuman</div>
                             <div class="separator separator-dashed mb-5"></div>
@@ -155,7 +155,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!--begin::Heading-->
                     <div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
                         <!--begin::Title-->
@@ -273,6 +273,33 @@
             <div class="container">
                 <!--begin::Heading-->
                 <div id="visi-misi" class="text-center mb-17">
+
+                    <div class="px-10 mb-10">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2>Forum Pengumuman</h2>
+                        </div>
+
+                        <!-- Pengumuman 1 -->
+                        @forelse ($pengumuman as $list)
+                            <div class="card announcement-card">
+                                <div class="card-header">
+                                    {{ $list->judul }}
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        {{ $list->isi }}
+                                    </p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    Diposting oleh Admin • {{ $list->tanggal_pelaksanaan }}
+                                </div>
+                            </div>
+                        @empty
+                            <div class="alert alert-info">
+                                Tidak ada pengumuman saat ini.
+                            </div>
+                        @endforelse
+                    </div>
                     <!--begin::Title-->
                     <h3 class="fs-2hx text-dark" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
                         VISI MISI</h3>
