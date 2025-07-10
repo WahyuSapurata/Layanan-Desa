@@ -41,7 +41,7 @@
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
             <div class="position-relative">
-                <div class="position-absolute w-100 z-index-n2">
+                <div class="position-absolute w-100 z-index-n2 background-overlay">
                     <img src="{{ asset('bg_landing.jpg') }}" class="w-100 backgriund-landing" style="height: 100vh"
                         alt="">
                 </div>

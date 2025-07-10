@@ -404,17 +404,11 @@ th[rowspan] {
 }
 
 .background-overlay:before {
-    background: url(https://uin-alauddin.ac.id/themes/images/overlay-pattern/overlay-pattern-1.png);
+    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: " ";
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.8;
+    inset: 0;
+    background: rgb(0 0 0 / 72%);
+    z-index: 2;
 }
 
 .select2-results__options {
