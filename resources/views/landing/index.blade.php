@@ -274,7 +274,7 @@
                 <!--begin::Heading-->
                 <div id="visi-misi" class="text-center mb-17">
 
-                    <div class="px-10 mb-10">
+                    <div class="px-10 mb-10 text-left">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h2>Forum Pengumuman</h2>
                         </div>
