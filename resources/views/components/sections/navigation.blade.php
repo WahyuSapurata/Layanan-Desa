@@ -375,7 +375,7 @@
 
                         <div class="mb-10">
                             <label for="nomor_pembeli" class="form-label">Nomor Pembeli</label>
-                            <input class="form-control" type="text" name="nomor_pembeli" id="nomor_pembeli">
+                            <input class="form-control" type="number" name="nomor_pembeli" id="nomor_pembeli">
                             <small class="text-danger nomor_pembeli_error"></small>
                         </div>
 
@@ -1312,16 +1312,17 @@
         // Mengumpulkan data dari setiap input
         var formData = {
             nama: document.getElementById('nama_penjual').value,
-            umur: document.getElementById('umur').value,
-            pekerjaan: document.getElementById('pekerjaan_penjual').value,
+            nik_penjual: document.getElementById('nik_penjual').value,
+            nomor_penjual: document.getElementById('nomor_penjual_penjual').value,
             alamat: document.getElementById('alamat_penjual').value,
             jumlah_hewan: document.getElementById('jumlah_hewan').value,
-            no_telepon: document.getElementById('no_telepon_penjual').value,
-            foto_ktp: document.getElementById('foto_ktp_penjual').files[0], // Mengambil nama file saja
+            foto_ktp: document.getElementById('foto_ktp_penjual').files[0], // ambil file
+
             data_hewan: [],
+
             nama_pembeli: document.getElementById('nama_pembeli').value,
-            umur_pembeli: document.getElementById('umur_pembeli').value,
-            pekerjaan_pembeli: document.getElementById('pekerjaan_pembeli').value,
+            nik_pembeli: document.getElementById('nik_pembeli').value,
+            nomor_pembeli: document.getElementById('nomor_pembeli').value,
             alamat_pembeli: document.getElementById('alamat_pembeli').value
         };
 
@@ -1332,9 +1333,7 @@
             var jenisKelamin = container.querySelector('.jenis_kelamin').value;
             var warnaBulu = container.querySelector('.warna_bulu').value;
             var umurHewan = container.querySelector('.umur').value;
-            var tanduk = container.querySelector('.tanduk').value;
-            var pusar = container.querySelector('.pusar').value;
-            var capBakar = container.querySelector('.cap_bakar').value;
+            var ciri = container.querySelector('.ciri').value;
             var noKartu = container.querySelector('.no_kartu').value;
 
             // Buat objek baru untuk setiap input hewan dan tambahkan ke dalam array data_hewan
@@ -1343,9 +1342,7 @@
                 jenis_kelamin: jenisKelamin,
                 warna_bulu: warnaBulu,
                 umur: umurHewan,
-                tanduk: tanduk,
-                pusar: pusar,
-                cap_bakar: capBakar,
+                ciri: ciri,
                 no_kartu: noKartu
             };
 
