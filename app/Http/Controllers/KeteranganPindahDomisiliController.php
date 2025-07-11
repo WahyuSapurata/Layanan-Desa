@@ -41,7 +41,7 @@ class KeteranganPindahDomisiliController extends BaseController
         $fotoKk = '';
         if ($request->file('foto_kk')) {
             $extension = $request->file('foto_kk')->extension();
-            $fotoKk = $request->kepala_keluarga . '-' . now()->timestamp . 'kk' . '.' . $extension;
+            $fotoKk = 'pindah' . '-' . now()->timestamp . 'kk' . '.' . $extension;
             $request->file('foto_kk')->storeAs('public/ket_pindah', $fotoKk);
         }
 

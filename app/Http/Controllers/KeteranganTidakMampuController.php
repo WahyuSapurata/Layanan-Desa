@@ -12,7 +12,7 @@ class KeteranganTidakMampuController extends BaseController
 {
     public function index()
     {
-        $module = 'Surat Keterangan Usaha';
+        $module = 'Surat Keterangan Tidak Mampu';
         return view('admin.suratkeluar.keterangantidakmampu', compact('module'));
     }
 
@@ -40,7 +40,7 @@ class KeteranganTidakMampuController extends BaseController
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
-            $fotoKtp = $request->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
+            $fotoKtp = 'tidak_mampu' . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $request->file('foto_ktp')->storeAs('public/ket_tidak_mampu', $fotoKtp);
         }
 

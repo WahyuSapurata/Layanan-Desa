@@ -40,7 +40,7 @@ class KeteranganKematianController extends BaseController
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
-            $fotoKtp = $request->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
+            $fotoKtp = 'kematian' . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $request->file('foto_ktp')->storeAs('public/ket_kematian', $fotoKtp);
         }
 
@@ -63,12 +63,14 @@ class KeteranganKematianController extends BaseController
             $data->status = "BELUM TERVERIFIKASI";
             $data->foto_ktp = $fotoKtp;
             $data->save();
+
+            Session::flash('status', 'success');
+            Session::flash('message', 'Data berhasil dikirim!');
         } catch (\Exception $e) {
             Session::flash('status', 'warning');
             Session::flash('message', 'Data gagal dikirim!');
         }
-        Session::flash('status', 'success');
-        Session::flash('message', 'Data berhasil dikirim!');
+
         return redirect()->route('landing');
     }
 

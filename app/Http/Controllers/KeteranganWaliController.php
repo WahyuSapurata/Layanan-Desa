@@ -12,7 +12,7 @@ class KeteranganWaliController extends BaseController
 {
     public function index()
     {
-        $module = 'Surat Keterangan Usaha';
+        $module = 'Surat Keterangan Wali';
         return view('admin.suratkeluar.keteranganwali', compact('module'));
     }
 
@@ -40,7 +40,7 @@ class KeteranganWaliController extends BaseController
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
-            $fotoKtp = $request->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
+            $fotoKtp = 'wali' . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $request->file('foto_ktp')->storeAs('public/ket_wali', $fotoKtp);
         }
 

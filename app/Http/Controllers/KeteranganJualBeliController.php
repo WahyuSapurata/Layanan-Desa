@@ -41,7 +41,7 @@ class KeteranganJualBeliController extends BaseController
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
-            $fotoKtp = $request->nama_penjual . '-' . now()->timestamp . 'ktp' . '.' . $extension;
+            $fotoKtp = 'jual_beli' . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $request->file('foto_ktp')->storeAs('public/ket_jualbeli', $fotoKtp);
         }
 

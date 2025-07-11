@@ -40,7 +40,7 @@ class KeteranganHilangController extends BaseController
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
-            $fotoKtp = $request->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
+            $fotoKtp = 'ket_hilang' . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $request->file('foto_ktp')->storeAs('public/ket_hilang', $fotoKtp);
         }
 

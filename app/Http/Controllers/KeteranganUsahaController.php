@@ -42,7 +42,7 @@ class KeteranganUsahaController extends BaseController
         $fotoKtp = '';
         if ($request->file('foto_ktp')) {
             $extension = $request->file('foto_ktp')->extension();
-            $fotoKtp = $request->nama . '-' . now()->timestamp . 'ktp' . '.' . $extension;
+            $fotoKtp = 'usaha' . '-' . now()->timestamp . 'ktp' . '.' . $extension;
             $request->file('foto_ktp')->storeAs('public/ket_usaha', $fotoKtp);
         }
 

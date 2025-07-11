@@ -451,8 +451,17 @@
 
                         <div class="mb-10">
                             <label for="pekerjaan_penjual" class="form-label">Pekerjaan Penjual</label>
-                            <input class="form-control" type="text" name="pekerjaan_penjual"
-                                id="pekerjaan_penjual">
+                            <select name="pekerjaan_penjual" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_penjual_error"></small>
                         </div>
 
@@ -477,7 +486,7 @@
 
                         <div class="mb-10">
                             <label for="nik_pembeli" class="form-label">NIK Pembeli</label>
-                            <input class="form-control" type="text" name="nik_pembeli" id="nik_pembeli">
+                            <input class="form-control" type="number" name="nik_pembeli" id="nik_pembeli">
                             <small class="text-danger nik_pembeli_error"></small>
                         </div>
 
@@ -498,8 +507,17 @@
 
                         <div class="mb-10">
                             <label for="pekerjaan_pembeli" class="form-label">Pekerjaan Pembeli</label>
-                            <input class="form-control" type="text" name="pekerjaan_pembeli"
-                                id="pekerjaan_pembeli">
+                            <select name="pekerjaan_pembeli" class="form-select" data-placeholder="Pilih agama">
+                                <option></option>
+                                <option value="islam">Petani</option>
+                                <option value="pelajar/mahasiswa">Pelajar/Mahasiswa</option>
+                                <option value="pns">Pns</option>
+                                <option value="buruh">Buruh</option>
+                                <option value="karyawan swasta">Karyawan Swasta</option>
+                                <option value="guru">Guru</option>
+                                <option value="bidan">Bidan</option>
+                                <option value="perawat">Perawat</option>
+                            </select>
                             <small class="text-danger pekerjaan_pembeli_error"></small>
                         </div>
 
@@ -510,7 +528,7 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="nomor_pembeli" class="form-label">Nomor Penjual</label>
+                            <label for="nomor_pembeli" class="form-label">Nomor Pembeli</label>
                             <input class="form-control" type="number" name="nomor_pembeli" id="nomor_pembeli">
                             <small class="text-danger nomor_pembeli_error"></small>
                         </div>
@@ -835,14 +853,14 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
-                            <select name="kewarganegaraan" class="form-select"
+                            <label for="kewarganegaran" class="form-label">Kewarganegaraan</label>
+                            <select name="kewarganegaran" class="form-select"
                                 data-placeholder="Pilih jenis kewarganegaraan">
                                 <option></option>
                                 <option value="indonesia">Indonesia</option>
                                 <option value="asin">Asing</option>
                             </select>
-                            <small class="text-danger kewarganegaraan_error"></small>
+                            <small class="text-danger kewarganegaran_error"></small>
                         </div>
 
                         <div class="mb-10">
