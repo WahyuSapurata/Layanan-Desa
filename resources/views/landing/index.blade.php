@@ -275,8 +275,8 @@
                 <div id="visi-misi" class="text-center mb-17">
 
                     <div class="px-10 mb-10 text-start">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <h2>Forum Pengumuman</h2>
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <h2 class="text-center">Forum Pengumuman</h2>
                         </div>
 
                         <!-- Pengumuman 1 -->
@@ -300,18 +300,43 @@
                             </div>
                         @endforelse
                     </div>
-                    <!--begin::Title-->
-                    <h3 class="fs-2hx text-dark" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
-                        VISI MISI</h3>
-                    <!--end::Title-->
-                    <!--begin::Text-->
-                    <div class="content-subdeskripsi">
-                        <ul class="fw-bolder fs-3 d-grid justify-content-center">
-                            <li>Desa Melayani</li>
-                            <li>Desa Berkarakter</li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!--begin::Title-->
+                            <h3 class="fs-2hx text-dark" id="how-it-works"
+                                data-kt-scroll-offset="{default: 100, lg: 150}">
+                                VISI</h3>
+                            <!--end::Title-->
+                            <!--begin::Text-->
+                            <div class="content-subdeskripsi">
+                                <ul class="fw-bolder fs-3 d-grid justify-content-center">
+                                    <li>Terwujudnya Desa Barua sebagai Desa digital yang mandiri, transparan, inovatif,
+                                        dan
+                                        berbasis teknologi informasi untuk meningkatkan kualitas pelayanan publik dan
+                                        kesejahteraan masyarakat.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h3 class="fs-2hx text-dark" id="how-it-works"
+                                data-kt-scroll-offset="{default: 100, lg: 150}">
+                                MISI</h3>
+                            <!--end::Title-->
+                            <!--begin::Text-->
+                            <div class="content-subdeskripsi">
+                                <ul class="fw-bolder fs-3 d-grid justify-content-center">
+                                    <li>Meningkatkan Akses Teknologi.</li>
+                                    <li>Pelayanan publik berbasis digital</li>
+                                    <li>Pemberdayaan masyarakat digital</li>
+                                    <li>Digitalisasi administrasi desa</li>
+                                    <li>Mendukung ekonomi digital desa</li>
+                                    <li>Transparansi dan partisipasi publik</li>
+                                </ul>
+                            </div>
+                            <!--end::Text-->
+                        </div>
                     </div>
-                    <!--end::Text-->
                 </div>
                 <div id="struktur-otganisasi" class="text-center mb-17">
                     <!--begin::Title-->
