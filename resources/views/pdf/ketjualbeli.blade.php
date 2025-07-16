@@ -223,7 +223,7 @@
                     <li>PIHAK PERTAMA telah menyerahkan tanah dan tanaman yang ada di atas kepada PIHAK KEDUA dan oleh
                         karenanya segala keuntungan yang didapat dari dan segala kerugian / beban atas objek Pengoperan
                         Hak Atas Tanah tersebut di atas menjadi hak/beban PIHAK KEDUA.</li>
-                    <li>PIHAK PERTAMA menjamin bahwa objek Pengoperan Hak Atas Tanah Tersebut di atas tidak tersangkut
+                    <li>PIHAK KETIGA menjamin bahwa objek Pengoperan Hak Atas Tanah Tersebut di atas tidak tersangkut
                         sesuatu sengketa, bebas dari sitaan, tidak terikat sesuatu jaminan Utang dan Bebas dari
                         beban-beban lainnya.</li>
                 </ul>
@@ -261,7 +261,7 @@
                 </p>
             </div>
         </div>
-        <div>
+        <div style="margin-top: 20px">
             <p style="text-align: center; font-weight: bold">
                 Saksi-saksi
             </p>
@@ -271,7 +271,7 @@
                 <div>{{ $ketjualbeli->saksi3 }} (...............)</div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" style="margin-top: 20px">
             <div>
                 <p>
                     No.Reg. : {{ $ketjualbeli->no_reg }}

@@ -128,22 +128,22 @@
                 <div style="margin-top: 20px">Menerangkan Bahwa :</div>
                 <table style="margin-left: 50px">
                     <tr>
-                        <td>Nama</td>
+                        <td>Nama Penjual</td>
                         <td>:</td>
                         <td>{{ $kethewan->nama }}</td>
                     </tr>
                     <tr>
-                        <td>Umur</td>
+                        <td>NIK Penjual</td>
                         <td>:</td>
-                        <td>{{ $kethewan->umur }}</td>
+                        <td>{{ $kethewan->nik_penjual }}</td>
                     </tr>
                     <tr>
-                        <td>Pekerjaan</td>
+                        <td>Nomor Penjual</td>
                         <td>:</td>
-                        <td>{{ $kethewan->pekerjaan }}</td>
+                        <td>{{ $kethewan->nomor_penjual }}</td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td>Alamat Penjual</td>
                         <td>:</td>
                         <td>{{ $kethewan->alamat }}</td>
                     </tr>
@@ -159,9 +159,7 @@
                             <th>JENIS KELAMIN</th>
                             <th>WARNA BULU</th>
                             <th>UMUR</th>
-                            <th>TANDUK</th>
-                            <th>PUSAR</th>
-                            <th>CAP BAKAR</th>
+                            <th>CIRI</th>
                             <th>NO. KARTU</th>
                         </tr>
                     </thead>
@@ -173,9 +171,7 @@
                                 <td>{{ $row['jenis_kelamin'] }}</td>
                                 <td>{{ $row['warna_bulu'] }}</td>
                                 <td>{{ $row['umur'] }}</td>
-                                <td>{{ $row['tanduk'] }}</td>
-                                <td>{{ $row['pusar'] }}</td>
-                                <td>{{ $row['cap_bakar'] }}</td>
+                                <td>{{ $row['ciri'] }}</td>
                                 <td>{{ $row['no_kartu'] }}</td>
                             </tr>
                         @endforeach
@@ -190,17 +186,17 @@
                         <td>{{ $kethewan->nama_pembeli }}</td>
                     </tr>
                     <tr>
-                        <td>Umur</td>
+                        <td>NIK Pembeli</td>
                         <td>:</td>
-                        <td>{{ $kethewan->umur_pembeli }}</td>
+                        <td>{{ $kethewan->nik_pembeli }}</td>
                     </tr>
                     <tr>
-                        <td>Pekerjaan</td>
+                        <td>Nomor Pembeli</td>
                         <td>:</td>
-                        <td>{{ $kethewan->pekerjaan_pembeli }}</td>
+                        <td>{{ $kethewan->nomor_pembeli }}</td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td>Alamat Pembeli</td>
                         <td>:</td>
                         <td>{{ $kethewan->alamat_pembeli }}</td>
                     </tr>

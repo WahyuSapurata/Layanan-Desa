@@ -144,11 +144,6 @@
                         <td>{{ $ketwali->jenis_kelamin }}</td>
                     </tr>
                     <tr>
-                        <td>Pekerjaan</td>
-                        <td>:</td>
-                        <td>{{ $ketwali->pekerjaan }}</td>
-                    </tr>
-                    <tr>
                         <td>Agama</td>
                         <td>:</td>
                         <td>{{ $ketwali->agama }}</td>

@@ -100,7 +100,7 @@
 
         <div class="content">
             <div style="text-align: center; font-weight: bold; font-size: 16px; text-decoration: underline">SURAT
-                KETERANGAN USAHA</div>
+                KETERANGAN HILANG</div>
             <div style="text-align: center; font-size: 15px;">Nomor : {{ $kethilang->nomor_surat }}</div>
             <div style="width: 100%; margin-top: 50px; font-size: 16px">
                 <div>Yang bertanda tangan di bawah ini kepala Desa Barua Kecamatan Eremerasa Kabupaten Bantaeng
